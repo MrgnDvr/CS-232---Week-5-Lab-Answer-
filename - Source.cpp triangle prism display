@@ -1,0 +1,23 @@
+#include<iostream>
+#include<string>
+#include"TriangularPrism.h"
+using namespace std;
+int main() {
+//declarations
+int userNum;
+bool isUserNumOdd = false;
+//get user input
+while (!isUserNumOdd) {
+cout << "Enter a positive odd number for the base of a triangular
+prism: ";
+cin >> userNum;
+if (userNum % 2 == 1) {
+isUserNumOdd = true;
+}
+}
+//calculation
+TriangularPrism myPrism(userNum);
+//output
+myPrism.displayTriangularPrism();
+return 0;
+}
