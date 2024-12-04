@@ -1,0 +1,21 @@
+#ifndef _TRIANGULAR_PRISM
+#define _TRIANGULAR_PRISM
+#include<string>
+using namespace std;
+class TriangularPrism {
+private:
+int base;
+int stars;
+int spacesBefore;
+int spacesInRect;
+int spacesInTriangle;
+public:
+TriangularPrism(); //default constructor
+TriangularPrism(int basePar); //overload constructor
+int getBase();
+void setBase(int basePar);
+void displayTriangularPrism();
+void drawSpaces(int numOfSpacesPar);
+void drawStars(int numOfStarsPar);
+};
+#endif
